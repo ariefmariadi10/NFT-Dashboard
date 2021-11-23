@@ -1,0 +1,640 @@
+:root {
+    --grad: linear-gradient(120deg, #CF00E5 0%, #8300D8 100%);
+    --purp: #CF00E5;
+    --blue1: #000628;
+    --blue2: #020d2d;
+    --blue3: #041130;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.flex-div {
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Bar */
+body {
+    background-color: var(--blue1);
+}
+.our-nav {
+    padding: 8px 2% 8px 8%;
+    background-color: var(--blue1);
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+.nav-icon {
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 3px 8px;
+    display: none;
+}
+.nav-icon:hover {
+    background-color: var(--blue2);
+}
+.nav-left .search-box {
+    padding: 6px 10px;
+    border-radius: 25px;
+    background: var(--blue2);
+}
+.nav-left .search-box i {
+    font-size: 1rem;
+    color: #ccc;
+}
+.nav-left .search-box input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    padding-left: 5px;
+    color: #fff;
+}
+.nav-middle .amount-eth {
+    padding: 4px 8px;
+    background: var(--blue2);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+}
+.nav-middle .amount-eth p{
+    padding-left: 5px;
+}
+.nav-middle .notif {
+    padding: 4px;
+    background: var(--blue2);
+    border-radius: 5px;
+    font-size: 1.4rem;
+    margin-left: 1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.nav-right .profil {
+    padding: 4px 8px;
+    background: var(--blue2);
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+}
+.nav-right .profil img {
+    width: 25px;
+    border-radius: 15px;
+}
+.nav-right .profil p {
+    padding-left: 5px;
+}
+.nav-right .profil i {
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+/* Side Bar */
+.side-bar {
+    width: 6%;
+    height: 170vh;
+    background: var(--blue2);
+    padding-left: 2%;
+    padding-top: 20px;
+    top: 0;
+    z-index: 30;
+    position: fixed;
+}
+.logo img {
+    width: 35px;
+}
+.shorcut-links {
+    padding-top: 25px;
+}
+.shorcut-links a {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: .5rem 5px;
+    flex-wrap: wrap;
+    color: #fff;
+    font-size: 1.2rem;
+}
+.shorcut-links a:hover, .shorcut-links a:active {
+    border-left: 3px solid #CF00E5;
+}
+
+/* Main Section */
+.container {
+    display: flex;
+    background: var(--blue1);
+}
+/* Large Container */
+.large-container {
+    flex-basis: 70%;
+    background: var(--blue1);
+    padding-left: 8%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.main-container {
+    background: var(--blue2);
+    border-radius: 15px;
+    display: flex;
+    padding-right: 20px;
+
+}
+.nft {
+    padding: 20px;
+}
+.nft img {
+    width: 300px;
+    border-radius: 15px;
+}
+.creator img {
+    width: 25px;
+    border-radius: 25px;
+}
+.creator-1 {
+    margin-left: 15px;
+}
+.creator-1 img {
+    border-radius: 5px;
+}
+.creator p {
+    color: white;
+    padding-left: 5px;
+}
+.nft-text {
+    padding: 20px 0;
+}
+.title-nft {
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.nft-text h1 {
+    color: white;
+}
+.detail-nft {
+    padding: 15px 10px 10px 20px;
+    background: var(--blue3);
+    margin-top: .5rem;
+    border-radius: 10px;
+    color: white;
+    justify-content: space-between;
+}
+.sale-detail {
+    padding-left: 6rem;
+}
+.sale-detail span {
+    display: flex;
+}
+.sale-detail span p {
+    padding-right: 25px;
+}
+.option-nft {
+    margin-top: 20px;
+    padding: 15px;
+    background: var(--blue3);
+    border-radius: 15px;
+}
+.option-nft i {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+.option-nft i:hover {
+    color: var(--purp);
+}
+.option-nft .button-1 {
+    padding-left: 3rem;
+}
+.option-nft .button-1 button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    transition: all ease 0.3s;
+}
+.option-nft .button-1 button:hover {
+    border: 1px solid #8300D8;
+    color: #8300D8;
+}
+.option-nft .button-2 {
+    padding-left: 2rem;
+}
+.option-nft .button-2 button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: var(--grad);
+    color: #fff;
+    transition: all ease 0.3s;
+}
+.option-nft .button-2 button:hover {
+    background: transparent;
+    border: 1px solid #8300D8;
+    color: #8300D8;
+}
+.list-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--blue2);
+    border-radius: 15px;
+}
+.nft-list .thumbnail {
+    width: 235px;
+    border-radius: 10px;
+}
+.creator-2 {
+    padding-top: 5px;
+}
+.creator-2 p {
+    font-size: .8rem;
+}
+.nft-list h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.nft-list-detail {
+    padding-left: 10px;
+}
+.more-detail-price p {
+    font-size: .8rem;
+    color: #fff;
+    font-weight: 300;
+}
+.more-detail-price h1 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.more-detail-hours {
+    padding-left: 2.5rem;
+}
+.more-detail-hours p {
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 300;
+}
+.more-detail-hours h1 {
+    font-size: 1rem;
+    font-weight: 600
+}
+.show-list {
+    margin-top: 1rem;
+}
+.show-list button {
+    padding: 8px 30px;
+    text-align: center;
+    background: var(--grad);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.show-list button i {
+    padding-left: 5px;
+}
+.show-list button:hover {
+    background: none;
+    transform: translateX(10px);
+}
+
+/* Side Container */
+.side-container {
+    padding-top: 20px;
+    background: var(--blue1);
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+    flex-basis: 30%;
+    z-index: 10;
+}
+.activity {
+    padding: 20px;
+    background: var(--blue2);
+    border-radius: 15px;
+}
+.activity h1 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.day {
+    padding: 4px 12px;
+    background: var(--blue3);
+    border-radius: 5px;
+}
+.day p {
+    color: #ccc;
+    font-size: .7rem;
+    padding-right: 10px;
+}
+.day a i {
+    color: #ccc;
+}
+.activity-items {
+    padding: 8px;
+    background: var(--blue3);
+    border-radius: 5px;
+    margin-top: 13px;
+}
+.activity-thumbnail {
+    width: 50px;
+    border-radius: 5px;
+}
+.items-detail {
+    padding-left: 5px;
+}
+.items-detail h2 {
+    color: #fff;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+.activity-title {
+    justify-content: space-between;
+}
+.items-detail p {
+    padding-left: 10px;
+    font-size: .7rem;
+    color: #ccc;
+}
+.activity-button {
+    padding-top: 25px;
+}
+.activity-button button {
+    padding: 8px 120px;
+    border-radius: 5px;
+    border: none;
+    background: var(--blue3);
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.activity-button button:hover {
+    background: transparent;
+    border: 1px solid #CF00E5;
+    color: #CF00E5;
+}
+.top-items {
+    padding: 3px;
+    background: var(--blue3);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.top-creators {
+    margin-top: 20px;
+    background: var(--blue2);
+    padding: 20px;
+    border-radius: 15px;
+}
+.top-title {
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.items-creator {
+    justify-content: space-between;
+}
+.top-title h1 {
+    color: #fff;
+    font-size: 1.2rem;
+}
+.top-items img {
+    width: 30px;
+    border-radius: 5px;
+}
+.see-all p {
+    color: #fff;
+    font-size: .8rem;
+}
+.see-all i {
+    color: #fff;
+    font-size: .8rem;
+    padding-left: 8px;
+}
+.items-thumbnail {
+    align-items: center;
+    padding: 0 5px;
+}
+.items-thumbnail p {
+    color: #ccc;
+    font-size: .6rem;
+}
+.items-thumbnail h2 {
+    font-size: .8rem;
+    color: #fff;
+}
+.items-thumbnail div {
+    padding-left: 10px;
+}
+.thumbnail-button {
+    padding-left: 2rem;
+    padding-right: 5px;
+}
+.thumbnail-button button {
+    padding: 3px 30px;
+    border: none;
+    background: var(--grad);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+.thumbnail-button button:hover {
+    background: transparent;
+    color: #CF00E5;
+    border: 1px solid #CF00E5;
+}
+
+/* Footer */
+.our-footer {
+    margin-left: 8%;
+    margin-top: 2rem;
+    padding: 2rem;
+    margin-right: 3%;
+    display: flex;
+}
+.our-footer h1 {
+    font-size: 1rem;
+    color: #fff;
+}
+.our-footer hr {
+    background: #fff;
+    width: 50%;
+    margin-bottom: 1rem;
+}
+.our-footer p {
+    font-size: .8rem;
+    color: #ccc;
+}
+.our-footer ul {
+    list-style: none;
+}
+.our-footer a {
+    color: #ccc;
+}
+.our-footer span {
+    color: #ccc;
+}
+.our-footer i {
+    color: #ccc;
+    margin-right: 3px;
+}
+.our-footer .about {
+    flex-basis: 30%;
+    margin-left: 3rem;
+}
+.our-footer .contact-us {
+    flex-basis: 30%;
+    margin-left: 3rem;
+}
+.our-footer .useful-link {
+    flex-basis: 25%;
+    margin-left: 3rem;
+}
+.our-footer .social-media {
+    flex-basis: 25%;
+    margin-left: 3rem;
+}
+.social-media span {
+    margin-left: 10px;
+}
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+}
+.copyright p {
+    font-size: .8rem;
+    color: #ccc;
+}
+
+/* Responsive Web */
+@media (max-width:769px) {
+    .side-bar {
+        max-width: 0px;
+        width: 8%;
+        padding-left: 5px;
+        height: 300vh;
+        overflow: hidden;
+        visibility: hidden;
+    }
+    .side-bar.open {
+        visibility: visible;
+    }
+    .nav-icon {
+        display: block;
+    }
+    .container {
+        display: block;
+        margin-right: 6rem;
+    }
+    .main-container {
+        display: block;
+    }
+    .large-container {
+        flex-basis: 90%;
+    }
+    .side-container {
+        flex-basis: 90%;
+        padding-right: 0;
+    }
+    .our-nav {
+        position: sticky;
+        margin-right: 5rem;
+    }
+    .nft-text {
+        padding-left: 20px;
+    }
+    .show-side-bar {
+        display: flex;
+    }
+    .our-footer {
+        display: block;
+    }
+    .our-footer .about, .our-footer .social-media, .our-footer .contact-us, .our-footer .useful-link {
+        flex-basis: 100%;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width:605px) {
+    .nav-left {
+        display: none;
+    }
+}
+@media (max-width:376px) {
+    .nav-middle .amount-eth p {
+        font-size: .8rem;
+    }
+    .notif i {
+        font-size: .8rem;
+    }
+    .nav-right .profil img {
+        width: 20px;
+    }
+    .nav-right .profil p {
+        font-size: .8rem;
+    }
+    .our-nav {
+        margin-right: 1rem;
+    }
+    .container {
+        margin-right: 1rem;
+        padding-left: 7px;
+    }
+    .logo img {
+        width: 25px;
+    }
+    .shorcut-links a {
+        font-size: .8rem;
+    }
+    .side-container {
+        margin-left: 15px;
+    }
+    .current-bid p{
+        font-size: .7rem;
+    }
+    .current-bid h1 {
+        font-size: 1.2rem;
+    }
+    .sale-detail p {
+        font-size: .7rem;
+    }
+    .sale-detail h1 {
+        font-size: 1.2rem;
+    }
+    .sale-detail {
+        padding-left: 1rem;
+    }
+    .option-nft .button-1 button {
+        padding: 10px 18px;
+    }
+    .option-nft .button-2 button {
+        padding: 10px 18px;
+    }
+    .option-nft .button-1 {
+        padding-left: 1rem;
+    }
+    .option-nft .button-2 {
+        padding-left: 1rem;
+    }
+    .activity-button button {
+        padding: 8px 118px;
+    }
+
+}
